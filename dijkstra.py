@@ -24,7 +24,6 @@ def dijkstra(G, W, s):
     # Q -> lengths of shortest paths (for priority queue)
     # SP -> length of shortest path
     # P -> predecessor relationship
-    # vertex --> list of vertexes
     P = {}
     Q = heapdict.heapdict()
     SP = {}

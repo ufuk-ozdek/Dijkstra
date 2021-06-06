@@ -1,1 +1,1 @@
-# Dijkstra algorith python implementation
+# Dijkstra algorithm python implementation

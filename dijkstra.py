@@ -40,8 +40,8 @@ def dijkstra(G, W, s):
         # relaxing the edges
         for v in G[u]:
             if SP[v] > SP[u] + W[(u, v)]:
-                Q[v] = Q[u] + W[(u, v)]
-                SP[v] = Q[u] + W[(u, v)]
+                Q[v] = SP[u] + W[(u, v)]
+                SP[v] = SP[u] + W[(u, v)]
                 P[v] = u
 
         Q.popitem()
@@ -71,8 +71,8 @@ def dijkstra2(G, W, s, l):
         u = lowest_val[0]
         for v in G[u]:
             if SP[v] > SP[u] + W[(u, v)]:
-                Q[v] = Q[u] + W[(u, v)]
-                SP[v] = Q[u] + W[(u, v)]
+                Q[v] = SP[u] + W[(u, v)]
+                SP[v] = SP[u] + W[(u, v)]
                 P[v] = u
 
         Q.popitem()
